@@ -1,0 +1,15 @@
+{
+  "name": "react-hrnet-table",
+  "version": "1.0.1",
+  "description": "A React table component for HRnet that replaces the legacy jQuery DataTables plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Said Mohamed",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-data-table-component": "^7.7.0"
+  }
+}

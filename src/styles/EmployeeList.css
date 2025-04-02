@@ -1,0 +1,15 @@
+#employee-table_wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rdt_TableHeadRow {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rdt_TableCell {
+  font-size: 16px;
+}
