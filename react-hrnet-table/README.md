@@ -88,7 +88,7 @@ This project uses the following technologies:
 
 ## 📁 Repository
 
-Find the source code on GitHub: [HRnet Table Repository](https://github.com/saidDayas/react-hrnet-table)
+Find the source code on GitHub: [HRnet Table Repository](https://github.com/SaidMohamedDayas/oc-HRnet-p14-Front/tree/react-conversion/react-hrnet-table)
 
 ---
 
