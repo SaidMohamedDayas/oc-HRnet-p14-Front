@@ -28,10 +28,10 @@ const CreateEmployeeForm = () => {
         <input id="lastName" {...register("lastName")} />
 
         <label htmlFor="dateOfBirth">Date of Birth</label>
-        <input id="dateOfBirth" {...register("dateOfBirth")} />
+        <input id="dateOfBirth" type="date" {...register("dateOfBirth")} />
 
         <label htmlFor="startDate">Start Date</label>
-        <input id="startDate" {...register("startDate")} />
+        <input id="startDate" type="date" {...register("startDate")} />
 
         <fieldset className="address">
           <legend>Address</legend>

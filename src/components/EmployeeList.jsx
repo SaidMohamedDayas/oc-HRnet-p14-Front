@@ -4,6 +4,11 @@ import DataTable from "react-data-table-component";
 import { EmployeeContext } from "../context/EmployeeContext";
 import { Link } from "react-router-dom";
 
+// Fonction utilitaire pour formater les dates
+const formatDate = (dateString) => {
+  return new Intl.DateTimeFormat("fr-FR").format(new Date(dateString));
+};
+
 const EmployeeList = () => {
   const { employees } = useContext(EmployeeContext);
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,13 +26,17 @@ const EmployeeList = () => {
   const columns = [
     { name: "First Name", selector: (row) => row.firstName, sortable: true },
     { name: "Last Name", selector: (row) => row.lastName, sortable: true },
-    { name: "Start Date", selector: (row) => row.startDate, sortable: true },
-    { name: "Department", selector: (row) => row.department, sortable: true },
     {
-      name: "Date of Birth",
-      selector: (row) => row.dateOfBirth,
+      name: "Start Date",
+      selector: (row) => formatDate(row.startDate), // Formater la date
       sortable: true,
     },
+    {
+      name: "Date of Birth",
+      selector: (row) => formatDate(row.dateOfBirth), // Formater la date
+      sortable: true,
+    },
+    { name: "Department", selector: (row) => row.department, sortable: true },
     { name: "Street", selector: (row) => row.street, sortable: true },
     { name: "City", selector: (row) => row.city, sortable: true },
     { name: "State", selector: (row) => row.state, sortable: true },
